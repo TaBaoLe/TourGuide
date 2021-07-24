@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.PRM391x_TourGuide_FX08130.FullscreenContainer"
+    tools:context=".HomeFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/vietnam"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ha_noi"
+        android:textSize="@dimen/textSize_30"
+        android:textColor="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top30"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/imageHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hotelbig"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageView
+            android:id="@+id/imageAtm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/atm_machinebig"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top30"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/imageHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/hospitalbig"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/imageBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/metrobig"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</LinearLayout>
+
+
